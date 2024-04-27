@@ -1,0 +1,268 @@
+@keyframes blinkingTextAccentPrimaryAccent {
+  0% {
+    color: #ff0000; }
+  50% {
+    color: #f5f5f5; }
+  100% {
+    opacity: 1;
+    color: #ff0000; } }
+
+html {
+  font-size: 62.5%; }
+
+@keyframes blinkingTextAccentPrimaryAccent {
+  0% {
+    color: #ff0000; }
+  50% {
+    color: #f5f5f5; }
+  100% {
+    opacity: 1;
+    color: #ff0000; } }
+
+html {
+  font-size: 62.5%; }
+
+.btn-logo {
+  position: fixed;
+  z-index: 2;
+  left: 4rem;
+  top: 2.5rem;
+  font-size: 6rem;
+  color: #f5f5f5;
+  cursor: pointer; }
+  .btn-logo:hover {
+    color: #ff0000; }
+
+#side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(58, 58, 58, 0.5);
+  overflow-x: hidden;
+  padding-top: 14rem;
+  transition: all 0.5s ease-in-out; }
+  #side-menu a {
+    font-size: 2rem;
+    text-align: left;
+    padding: 1rem 2rem 1rem 4rem;
+    display: block;
+    transition: all 0.3s ease-in-out; }
+    #side-menu a:hover {
+      font-size: 3.5rem; }
+
+#main {
+  transition: all 1.5s ease-in-out; }
+
+@media screen and (max-width: 470px) {
+  body {
+    text-align: right; }
+    body .btn-logo {
+      left: 2rem;
+      top: 2rem; }
+    body h1,
+    body h2,
+    body h3,
+    body h4,
+    body h5 {
+      line-height: 1; }
+    body h1 {
+      font-size: 6rem;
+      padding-right: 2rem; }
+    body #home {
+      padding: 3rem 4rem 0 4rem;
+      line-height: 0; }
+    body #about {
+      display: flex;
+      flex-direction: column; }
+      body #about .about-quote,
+      body #about #about > div > div.about-quote > h3 {
+        display: none !important; }
+      body #about .about-text {
+        display: block;
+        padding: 0 2.5rem; }
+        body #about .about-text p {
+          font-size: 1.2rem; }
+    body #skills .skills-wrap {
+      padding-top: 15%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center; }
+      body #skills .skills-wrap .skill {
+        flex: 1 0 15%;
+        display: block;
+        text-align: center;
+        margin: 1%;
+        font-size: 1rem; }
+    body #projects h1 {
+      padding: 0 1rem !important;
+      font-size: 5rem; }
+    body #projects h4,
+    body #projects h5 {
+      line-height: 1.2; }
+    body #projects .projects-wrapper .h-slide {
+      padding: 0 !important; }
+      body #projects .projects-wrapper .h-slide .project-image img {
+        width: 250px; }
+      body #projects .projects-wrapper .h-slide .project-text p {
+        font-size: 1rem; }
+    body #contact h1 {
+      font-size: 5rem; }
+    body #contact .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 0; }
+      body #contact .contact-wrapper .contact-links {
+        display: flex;
+        justify-content: center; }
+        body #contact .contact-wrapper .contact-links .icon-wrapper a {
+          margin-bottom: 2rem; }
+      body #contact .contact-wrapper .contact-text-wrapper {
+        padding-left: 2rem; }
+        body #contact .contact-wrapper .contact-text-wrapper h5 {
+          margin-top: 2rem;
+          font-size: 1.5rem;
+          text-align: justify; }
+        body #contact .contact-wrapper .contact-text-wrapper h3 {
+          padding: 0;
+          font-size: 2rem; } }
+
+@media screen and (min-width: 471px) and (max-width: 555px) {
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 8rem; }
+  body h1 {
+    font-size: 8rem !important;
+    line-height: 1.2 !important; }
+  body section {
+    padding: 0 2rem 0 2rem;
+    overflow: hidden; }
+  body #home {
+    padding-left: 4rem; }
+  body #about .about-wrapper {
+    flex-direction: column; }
+    body #about .about-wrapper .about-quote {
+      display: none !important; }
+  body #skills .skills-wrap {
+    height: 80vh; }
+  body #projects {
+    padding-top: 0; }
+    body #projects h1 {
+      padding: 0 2rem !important;
+      font-size: 5rem; }
+    body #projects p {
+      font-size: 1.2rem; }
+    body #projects .projects-wrapper .h-slide {
+      padding: 0 !important; }
+      body #projects .projects-wrapper .h-slide img {
+        width: 400px; }
+    body #projects #project-navigation-menu {
+      margin: 10px 0 0 0;
+      padding: 0; }
+  body #contact h1 {
+    padding: 0 2rem !important; }
+  body #contact .contact-links {
+    justify-content: center; } }
+
+@media screen and (min-width: 556px) and (max-width: 768px) {
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 8rem; }
+  body h1 {
+    font-size: 8rem !important;
+    line-height: 1.2 !important; }
+  body section {
+    padding-right: 4rem;
+    padding-top: 2rem;
+    overflow: hidden; }
+  body #home {
+    padding-left: 5rem; }
+  body #about {
+    margin: 0; }
+    body #about .about-wrapper {
+      flex-direction: column !important;
+      justify-content: space-around; }
+      body #about .about-wrapper h3 {
+        text-align: right; }
+    body #about .about-quote {
+      padding: 0;
+      margin-left: 0; }
+    body #about .about-text {
+      margin-left: 2rem; }
+  body #skills .skills-wrap {
+    padding-top: 3rem;
+    height: 80vh; }
+  body #projects h1 {
+    padding: 0 2rem !important;
+    font-size: 9rem !important; }
+  body #projects .projects-wrapper .h-slide {
+    padding: 0 !important; }
+  body #contact .contact-links {
+    text-align: right;
+    justify-content: flex-end; }
+  body #contact .contact-text-wrapper {
+    padding: 10rem 0 0 4rem !important; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 8rem; }
+  body h1 {
+    font-size: 8rem !important;
+    line-height: 1.2 !important; }
+  body section {
+    padding: 0 8rem;
+    padding-top: 2rem;
+    overflow: hidden; }
+  body #about .about-text {
+    padding-top: 4rem; }
+  body #skills .skills-wrap {
+    padding-top: 3rem;
+    height: 80vh; }
+  body #projects .projects-wrapper .projects-wrapper .h-slide {
+    padding: 0 !important; }
+  body #contact .contact-links {
+    text-align: right;
+    justify-content: flex-end; }
+    body #contact .contact-links a > i {
+      font-size: 8rem;
+      padding-right: 1.4rem; }
+  body #contact .contact-text-wrapper {
+    margin-right: 15rem;
+    padding: 10rem 0 0 4rem !important; } }
+
+@media screen and (min-width: 1171px) {
+  body .btn-logo {
+    left: 2rem;
+    top: 2rem;
+    font-size: 8rem; }
+  body h1 {
+    font-size: 8rem !important;
+    line-height: 1.2 !important;
+    padding-top: 4rem; }
+  body section {
+    padding: 0 12%;
+    overflow: hidden; }
+  body #skills .skills-wrap {
+    padding-top: 3rem;
+    height: 80vh;
+    padding: 0 10%; }
+  body #projects .h-slide {
+    display: flex;
+    flex-direction: column; }
+  body #contact .contact-links {
+    text-align: right;
+    justify-content: flex-end; }
+    body #contact .contact-links a > i {
+      font-size: 8rem;
+      padding-right: 1.4rem; }
+  body #contact .contact-text-wrapper {
+    margin-right: 20rem;
+    padding: 10rem 0 0 4rem !important; } }

@@ -1,0 +1,336 @@
+@import "menu.scss";
+@import "variables.scss";
+@import "media.scss";
+
+// * Overall Style
+// *************************************
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  // Remove scroll bar from body (so I can set this on my wrapper instead)
+  overflow: hidden;
+
+  // Set main text colour
+  background-color: $primary-color;
+  color: set-text-color($primary-color);
+
+  // Set font sizes
+  font-size: 20px;
+  text-align: right;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.8;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  // Links
+  a {
+    color: set-text-color($primary-color);
+    text-decoration: none;
+
+    &:hover {
+      color: $font-accent-color;
+    }
+  }
+
+  span {
+    &.primary-color {
+      color: $font-primary-color;
+      &:hover {
+        animation: blinkingTextAccentPrimaryAccent 2s infinite;
+      }
+    }
+
+    &.accent-color {
+      color: $font-accent-color;
+      &:hover {
+        animation: blinkingTextAccentPrimaryAccent 2s infinite;
+      }
+    }
+  }
+
+  // * Website Navigation - Smooth Scroll & Scroll Snap
+  // *************************************
+  // Wrapper & Slides
+  .outer-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    // Smooth scroll
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat($set-vh);
+    scroll-snap-type: y mandatory;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 500vh; // so each slide occupies exactly the viewfinder height
+    width: 100vw;
+  }
+
+  .slide {
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+
+  // * Home Page
+  // *************************************
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+
+  // * About Page
+  // *************************************
+  #about {
+    .about-wrapper {
+      height: 80vh;
+      display: flex;
+      flex-direction: row; // change to column for mobile
+      align-items: center;
+      justify-content: space-between;
+
+      .about-quote {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        padding: 3rem 3rem 0 6rem;
+
+        a {
+          color: $font-accent-color;
+
+          &:hover {
+            animation: blinkingTextAccentPrimaryAccent 2s infinite;
+          }
+        }
+      }
+
+      .about-text {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 3;
+        text-align: justify;
+
+        a {
+          color: $font-accent-color;
+          font-weight: 800;
+
+          &:hover {
+            animation: blinkingTextAccentPrimaryAccent 2s infinite;
+          }
+        }
+      }
+    }
+  }
+
+  // * Skills Page
+  // *************************************
+  #skills {
+    .skills-wrap {
+      padding-top: 3rem;
+
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+
+      .skill {
+        flex: 1 0 15%;
+        display: block;
+        text-align: center;
+        margin: 1%;
+      }
+    }
+  }
+
+  // * Projects Page
+  // *************************************
+  #projects {
+    // Align title and projects area within the section area
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    h1 {
+      padding: 0 8rem 0 0;
+    }
+
+    // Set wider page padding to allow projects to take up full width
+    padding: 0;
+
+    // Implement horizontal scroll
+    .projects-wrapper {
+      overflow-y: scroll; // enable horizontal scroll
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+
+      .h-slides-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 400vw;
+
+        .h-slide {
+          // individual slide layout
+          width: 100vw;
+          height: 80vh;
+          scroll-snap-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+
+          // Remove scroll bar from projects and stops overlapping external contect
+          overflow: hidden;
+
+          // Set project padding to line up with page padding
+          padding: 2rem 8rem 0 6rem;
+
+          text-align: justify;
+
+          h5 {
+            text-align: left;
+          }
+
+          a {
+            color: $font-accent-color;
+            &:hover {
+              animation: blinkingTextAccentPrimaryAccent 2s infinite;
+            }
+          }
+
+          span > a {
+            color: $font-primary-color;
+            &:hover {
+              animation: blinkingTextAccentPrimaryAccent 1.2s infinite;
+            }
+          }
+
+          .project-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .project-text {
+            width: 80%;
+          }
+
+          .tech-list {
+            color: $font-secondary-accent-color;
+          }
+        }
+      }
+    }
+
+    // Align project navigation menu
+    #project-navigation-menu {
+      text-align: center;
+      padding: 1rem 0 0 0;
+      font-size: 2rem;
+      font-weight: 800;
+
+      .project-link {
+        padding: 1.5rem 1rem 0 0;
+      }
+    }
+  }
+
+  // * Contact Page
+  // *************************************
+  #contact {
+    display: flex;
+    flex-direction: column;
+
+    .contact-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      //! flex-direction: row-reverse;  for screen media queries
+      padding: 6rem 0 6rem 0;
+
+      .contact-links {
+        display: flex;
+        flex-basis: 10%;
+
+        .icon-wrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          a {
+            padding: 0 1rem 0 1rem;
+          }
+        }
+      }
+
+      .contact-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 70%;
+        justify-content: flex-end;
+        text-align: left;
+
+        h5 {
+          font-weight: 400;
+          margin-bottom: 6rem;
+          margin-right: 2rem;
+        }
+
+        h3 {
+          padding-bottom: 20%;
+        }
+
+        span {
+          color: $font-secondary-accent-color;
+        }
+
+        a {
+          color: $font-accent-color;
+          &:hover {
+            animation: blinkingTextAccentPrimaryAccent 1.2s infinite;
+          }
+        }
+      }
+    }
+  }
+}

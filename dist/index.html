@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="css" rel="stylesheet" href="normalize.css" />
+  <script src="https://kit.fontawesome.com/30c2b50044.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.9.0/devicon.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>🌶️ Portfolio - Sandra Spighel - Hot Sauce Ninja</title>
+</head>
+
+<body>
+  <main id="main">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <!-- HEADER -->
+        <header>
+
+          <!-- * Navbar -->
+          <nav class="navbar">
+
+            <!-- * Show Menu Button -->
+            <div class="open-side-menu">
+              <button class="menu-btn">
+                <i class="btn-logo fas fa-pepper-hot fa-3x"></i>
+              </button>
+            </div> 
+
+            <!-- * Hidden Menu -->
+            <div id="side-menu" onclick="toggleMenu()">
+              <a href="#home" class="nav-link">home</a>
+              <a href="#about" class="nav-link">about</a>
+              <a href="#skills" class="nav-link">skills</a>
+              <a href="#projects" class="nav-link">projects</a>
+              <a href="#contact" class="nav-link">contact</a>
+            </div>
+          </nav>
+        </header>
+
+        <section id="home" class="slide">
+          <h1>Sandra  <span 
+            class="accent-color"
+            id="hover-name" 
+            onmouseover="showHiddenInfo('hover-name', '/ˈʃpiːɡəl/')" 
+            onmouseout="concealHiddenInfo('hover-name', 'Spighel')"
+          >Spighel
+        </span></h1>
+          <h2><span 
+            class="primary-color"
+            id="hover-title" 
+            onmouseover="showHiddenInfo('hover-title', 'Hot Sauce Loving ex-Ninja')"
+            onmouseout="concealHiddenInfo('hover-title', 'Software Engineer')"
+          >Software Engineer
+        </span></h2>
+        </section>
+
+        <section id="about" class="slide">
+          <h1>about</h1>
+          <div class="about-wrapper">
+            <div class="about-quote">
+              <h3>I used to build <span><a href="https://list.co.uk/news/4049/what-immersive-cinema-experiences-does-glasgow-film-festival-have-in-store-this-year" target="_blank" id="highlight-text">real-life experiences.</a></span> Nowadays I'm doing the same, but <span><a href="https://github.com/HotSauceNinja" target="_blank">digitally.</a></span></h3>    
+            </div>
+
+            <div class="about-text">
+              <p>After spending 10 years in the film and events industries, 2020 gave me the opportunity to discover tech.</p>
+              <p>Coding is a natural fit for me, as my passion for Project Management and puzzles have found the perfect outlet. Keen to understand better and progress faster in my learning, I enrolled in the <span><a href="https://generalassemb.ly/education/software-engineering-immersive/london" target="_blank">Software Engineering Immersive Course</a></span> at General Assembly.</p>
+              <p>I bring strong organisational skills, creative problem solving and a passion for delivering outstanding results. Having studied <span><a href="http://ninpo.org/martial_traditions/ninpo.html" target="_blank">Ninpo</a></span> for 5 years, I learned endurance and perseverance. Working within the events industry gave me the opportunity to take part in, and <span><a href="https://www.theskinny.co.uk/festivals/uk-festivals/film/gff-announce-some-tantalising-special-events" target="_blank">deliver amazing experiences.</a></span></p>
+              <p>I want to continue bringing joy through immersive user experiences, this time digitally, no longer conditioned by set times and places.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="skills" class="slide">
+          <h1>skills</h1>
+          <div class="skills-wrap">
+            <div class="skill">
+              <i class="fab fa-js fa-3x"></i>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill">
+              <i class="devicon-typescript-plain fa-3x"></i>
+              <p>TypeScript</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-html5 fa-3x"></i>
+              <p>HTML</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-css3-alt fa-3x"></i> 
+              <p>CSS</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-python fa-3x"></i>
+              <p>Python</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-react fa-3x"></i>
+              <p>React</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-node-js fa-3x"></i>
+              <p>Node.js</p>
+            </div>
+            <div class="skill">
+              <i class="devicon-postgresql-plain fa-3x"></i>
+              <p>PostgreSQL</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-npm fa-3x"></i>
+              <p>npm</p>
+            </div>
+            <div class="skill">
+              <i class="devicon-git-plain fa-3x"></i>
+              <p>Git</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-python fa-3x"></i>
+              <p>GitLab</p>
+            </div>
+            <div class="skill">
+              <i class="devicon-github-original fa-3x"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="skill">
+              <i class="fab fa-sass fa-3x"></i>
+              <p>SASS</p>
+            </div>
+            <div class="skill">
+              <span class="iconify fa-3x" data-icon="mdi-bulma" data-inline="false"></span>
+              <p>Bulma</p>
+            </div>
+            <div class="skill">
+              <i class="devicon-visualstudio-plain fa-3x"></i>
+              <p>VS Code</p>
+            </div>
+            <div class="skill">
+              <i class="fa-3x"><></i>
+              <p>Web Components</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="slide">
+          <h1>projects</h1>
+          <!-- Wrapper for the four projects -->
+          <div class="projects-wrapper">
+
+            <!-- Wrapper for horizontal slides -->
+            <div class="h-slides-wrapper">
+
+              <div class="h-slide" id="project1">
+                <div class="project-text">
+                  <h4><a href="https://hotsauceninja.github.io/SEI-Project-1-HotSauceNinjaGame/">Hot Sauce Ninja</a></h4>
+                  <h5>9 days, solo project - <span><a href="https://github.com/HotSauceNinja/SEI-Project-1-HotSauceNinjaGame">README</a></span></h5>
+                  <p>Space Invaders-inspired game where the player is a ninja fighting incoming food enemies by throwing bottles of hot sauce. This was both the first project from the General Assembly Software Engineering Immersive Course, and my first-ever coding project.</p>
+                  <p class="tech-list">Vanilla JavaScript, HTML, CSS. Deployed with GitHub Pages.</p>   
+                </div>
+                <div class="project-image">
+                  <a href="https://hotsauceninja.github.io/SEI-Project-1-HotSauceNinjaGame/"><img src="https://github.com/HotSauceNinja/SEI-Project-1-HotSauceNinjaGame/blob/main/HotSauceNinja_game.gif?raw=true" alt="hot sauce ninja game"></a>
+                </div>       
+              </div>
+
+              <div class="h-slide" id="project2">
+                <div class="project-text">
+                  <h4><a href="https://github.com/HotSauceNinja/SEI-Project-4-FASTival">FASTival</a> </h4>   
+                  <h5>8 days, solo project - <span><a href="https://github.com/HotSauceNinja/SEI-Project-4-FASTival">README</a></span></h5>
+                  <p id="project-description">FASTival was created with the intention to optimise the film festival scheduling process by making it fully digital. Full-stack application integrating the back end with a Python Django API using Django REST Framework to serve data from a Postgres database, and consumed with a separate front-end built with React Hooks.</p>
+                  <p class="tech-list"> Python, JavaScript, Django, React, React Router Dom, React Big Calendar, React Map GL, React Select, SASS, Bulma, Axios, Moment.</p>
+                  <div class="project-image">
+                    <a href="https://github.com/HotSauceNinja/SEI-Project-4-FASTival"><img src="https://github.com/HotSauceNinja/SEI-Project-4-FASTival/raw/main/README%20images/delete_film.gif?raw=true" alt="fastival"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="h-slide"  id="project3">
+                <div class="project-text">
+                  <h4><a href="https://github.com/HotSauceNinja/SEI-Project-3-DEVERR">DEVERR</a></h4>
+                  <h5>8 days, 3-person group project - <span><a href="https://github.com/HotSauceNinja/SEI-Project-3-DEVERR">README</a></span></h5>
+                  <p>Website inspired by Fiverr, with a focus on software development. I took on leading the project planning, along with building the back end with Express, Mongo and Mongoose. I also helped with building the carousel component (React Slick), home and users Index pages (React Hooks), and the favouriting functionality.</p>
+                  <p class="tech-list">JavaScript, HTML, CSS, React, React Router Dom, React Slick, Node.js, Axios, Bcrypt, Express, JsonWebToken, Nodemon, Mongoose, MongoDB.</p>
+                </div>
+                <div class="project-image">
+                  <a href="https://github.com/HotSauceNinja/SEI-Project-3-DEVERR"><img src="https://github.com/HotSauceNinja/SEI-Project-3-DEVERR/raw/main/README%20images/Home_page.gif?raw=true" alt="deverr"></a>
+                </div>
+              </div>
+
+              <div class="h-slide" id="project4">
+                <div class="project-text">
+                  <h4><a href="https://github.com/HotSauceNinja/SEI-Project-2-ContraDictionary">ContraDictionary</a></h4>
+                  <h5>2 days, 2-person group, hackathon / pair-programming - <span><a href="https://github.com/HotSauceNinja/SEI-Project-2-ContraDictionary">README</a></span></h5>
+                  <p >Minimalist website leveraging 2 APIs (Classic English Dictionary and Urban Dictionary) to show dual definitions of words (traditional and slang).</p>
+                  <p class="tech-list">React, Axios, SASS & two dictionary APIs: (unofficial) Google Dictionary API and Urban Dictionary API.</p>
+                </div>
+                <div class="project-image">
+                  <a href="https://github.com/HotSauceNinja/SEI-Project-2-ContraDictionary"><img src="https://github.com/HotSauceNinja/SEI-Project-2-ContraDictionary/raw/main/src/images/ContraDictionary.gif?raw=true" alt="contra dictionary"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Navigation Menu -->
+          <div id="project-navigation-menu" >
+            <a href="#project1" class="project-link">1</a>
+            <a href="#project2" class="project-link">2</a>
+            <a href="#project3" class="project-link">3</a>
+            <a href="#project4" class="project-link">4</a>
+          </div>
+        </section>
+        
+        <section id="contact" class="slide">
+          <h1>contact</h1>
+            <div class="contact-wrapper">
+              <div class="contact-links">
+                <div class="icon-wrapper">
+                  <a href="https://www.linkedin.com/in/sandraspighel/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                  <a href="https://github.com/HotSauceNinja" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                </div>
+              </div>
+
+              <div class="contact-text-wrapper">
+                <h5>Drawing on passion for immersive user experiences, problem solving and creativity, I am driven to deliver <span>flawless user journeys in the digital space</span>. I am excited about the prospect of contributing to cutting-edge projects that redefine the digital landscape, by working in a dynamic Agile team where I can leverage my Front End experience.</h5>
+                <h3>Let's work <span class="primary-color"><a href="mailto:s.spighel@gmail.com" target="_blank">together!</span></h3>
+              </div>
+
+            </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  
+  <script>
+    // Side Menu Functions
+    const menuBtn = document.querySelector('.menu-btn')
+    const menu = document.querySelector('#side-menu')
+
+    // Set initial state of menu
+    let showMenu = false
+    menuBtn.addEventListener('click', toggleMenu)
+
+    function toggleMenu() {
+      if (!showMenu) {
+        document.getElementById('side-menu').style.width = '250px'
+        document.getElementById('main').style.marginLeft = '250px'
+        return showMenu = true     
+      }
+      
+      document.getElementById('side-menu').style.width = '0px'
+      document.getElementById('main').style.marginLeft = '0px'
+      return showMenu = false
+    }
+
+    // Show and Conceal hidden info functions
+    function showHiddenInfo(elementId, hiddenInfo) {
+      document.getElementById(elementId).innerHTML = hiddenInfo
+    }
+    function concealHiddenInfo(elementId, infoToShow) {
+      document.getElementById(elementId).innerHTML = infoToShow
+    }
+
+  </script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+</body>
+</html>
